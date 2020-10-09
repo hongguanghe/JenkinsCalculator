@@ -59,7 +59,6 @@ public class CalculatorTestThorough {
         String failureMessage =  "/ by zero";
         for(int i = 1 ; i < 100000 ; i++){
             try{
-
                 myCalculator.divide(i, 0);
                 fail();
             }

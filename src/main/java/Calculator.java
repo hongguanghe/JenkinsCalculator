@@ -19,7 +19,11 @@ class Calculator {
     }
 
     int divide(int a , int b){
-        return a / b;
+        try{
+            return a / b;
+        }catch (NullPointerException e) {
+            throw e;
+        }
     }
 
 
