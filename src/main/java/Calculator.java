@@ -19,10 +19,11 @@ class Calculator {
     }
 
     int divide(int a , int b){
-        try{
+        try {
             return a / b;
-        }catch (NullPointerException e) {
-            throw e;
+
+        }catch (Exception e){
+            throw new ArithmeticException("/ by zero");
         }
     }
 
